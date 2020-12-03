@@ -21,8 +21,8 @@ body {
 
 
 header{
-	background-color: #D6D6D6;
-	height: 100px;
+	background-color: white;
+	height: 70px;
 	display: flex;
 	flex-basis: 100%;
 	justify-content: space-between;
@@ -33,11 +33,8 @@ header nav .header__logo--medidas img{
 	width: 150px;
 	margin-left: 20px;	
 }
-.header__logo--medidas{
-    animation-name: efecto;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;	
-}
+
+
 
 header nav{
 	width: 50%
@@ -61,10 +58,11 @@ header nav ul li a{
 }    
 
 header nav ul li a:hover {
-	background-color: #939598;
+	
+	color: #D48380;
 }
 header nav ul li:hover ul{
-	background-color: #939598;
+	background-color:  #D48380;
 	display: block;
 }	
 
@@ -81,20 +79,31 @@ header img{
 
 } 
 
+h2{
+	color: white;
+}	
+
 
 .main {
-	padding: 20px
+	padding: 20px;
     flex: 1 1 100%;
 
 }
 
+main p {
+	text-align: justify;
+     padding-left: 10rem;
+	padding-right: 10rem;
+	padding-bottom: 2rem;
+}
+
 .texto_principal{
 
-	color: #000000;
+	color: #5D5D5D;
 	font-size: 1rem;
 	text-align: center;
-	padding: 80px
 	margin-bottom: 100px;
+	
 
 }	
 
@@ -128,25 +137,26 @@ nav ul {
 
 .subtitulo2	{
 
-	color: #5B595B;
+	color: #85352F;
 	text-align: center;
 	padding: 20px;
+	padding-bottom: 60px;
 	margin-top: 70px;
 }	
 
 h3 {
-
-	color: #5B595B;
+    color: #85352F;
 	font-size: 1,5rem;
+	padding-bottom: 150px;
 }	
 
 
 main ol{
 
 	text-align: center;
-	background-color: #939598;
-	padding: 20px;
+	background-color: #EEEEEE;
 	margin-bottom: 100px;
+	padding: 30px;
 }	
 
 
@@ -154,33 +164,35 @@ main ol li {
 
 	display: inline-block;
 	overflow: visible;
-	background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+	background-image: linear-gradient(135deg, #D48380 0%, #85352F 100%);
 	box-shadow: 1px 1px 8px #606060;
 	width: 300px;
-	height: 400px;
+	height: 200px;
 	owerflow: visibility; 
 	padding: 30px;
 	margin: 5px;
+	color: white;
+
 }
 
 @keyframes efecto {
 	0% {transform: scale(1);}
-	100% {transform: scale(1.01);}
+	100% {transform: scale(1.005);}
 }
 
 main ol li:hover {
 	background-image: linear-gradient(#e2d1c3 100%, #fdfcfb 0%, 135deg);
-	transform: scale(1.05);
+	transform: scale(1.005);
 }
 
 .rubrosboos {
 	text-align: center;
 	background-image: linear-gradient(#e2d1c3 100%, #fdfcfb 0%, 135deg);
-	margin-right: 400PX;
-	margin-left: 400PX;
+	margin-right: 100PX;
+	margin-left: 100PX;
 	margin-bottom: 100PX;
-
 }
+
 .rubros {
 	text-align: center;
 	border: solid 2px #D6D6D6;
@@ -220,7 +232,20 @@ main .rubros div:hover {
 	text-align: center;	
 }	
 
+main div {
+	padding-left: 70px;
+	padding-right: 70px;
+	}
 
+main div p {
+	text-align: justify;
+	color: #5D5D5D;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+    text-align: center;
+
+	}
 
 main section .contenedorgrid {
 	border: solid 15px #D6D6D6;
@@ -234,6 +259,7 @@ main section .contenedorgrid {
 	text-align: center;
 	border: solid 2px #D6D6D6;
 	background-color: #EFEFEF;
+	margin-bottom: 60px;
 	display: grid;
 	grid-template-rows: repeat(4, 1fr);
 	grid-template-columns: repeat(3,1fr);
@@ -278,10 +304,95 @@ main .contenedorgrid div {
 	grid-area: (empresasd);
 }	
 
+.textoquienesomonos {
+	color: #5D5D5D;
+	text-align: justify;
+	margin: 50px;
+    text-align: center;
+}	
+
+.card-title{
+	color: #85352F;
+	text-align: left;
+
+}
+
+
+.rubrosfondo {
+	background-color: #EEEEEE;
+	padding: 1%;
+}
+
+.sectioncard{
+	background-color: white;
+	margin: 7%;
+	box-shadow: 1px 1px 8px #606060;
+	border-radius: 6px 6px 0px 0px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+main div section div{
+	text-align: center;
+	padding: 50px;
+	padding-top: 60px;
+
+} 
+
+.card-title{
+	color: #85352F;
+	text-align:center;
+}
+
+.card-text {
+	text-align: center;
+	padding-top: 50px;
+} 
+
+.parrafocard2 {
+	text-align: justify;
+	text-align: center;
+	color: #5D5D5D;
+	padding: 7px;
+}
+
+
+.servicioscards {
+	display: flex;
+	flex-direction: row;
+	background-color: #EEEEEE;
+	padding: 30px;
+}
+
+main div article {
+	text-align: center;
+	
+
+}
+
+.servicios-card-individuales{
+   background-image: linear-gradient(135deg, #D48380 0%, #85352F 100%);
+   box-shadow: 1px 1px 8px #606060;
+   height: 200px;
+   width: 300px;
+   margin: 20px;
+   text-align: center;
+}
+
+.parrafos-servicios-cards{
+	color: white;
+	text-align: center;
+}
+
+
+
+
+
+
 
 footer{
 	display: flex;
-	background-color: #D6D6D6;
+	background-color: #EEEEEE;
 	padding: 20px;
 	flex-basis:100%;
 	justify-content: space-between;
@@ -289,16 +400,24 @@ footer{
 }	
 
 
+
 footer .footer__li--datos{
 	margin: 10px;
 	padding: 10px;
 }
 
-footer div ul li{
+footer div ul li {
 
 	display: inline-block;
 	padding: 20px;	
 }  
+
+footer div ul li div{
+
+	display: inline-block;
+	padding: 20px;	
+	text-align: center;
+} 
 
 footer .footer__logo--medidas{
 	margin: 10px;
@@ -306,10 +425,26 @@ footer .footer__logo--medidas{
 } 
 
 .form__formulario{
-	border:  solid 1px #D6D6D6;
-	margin: 100px;
+	background-image: linear-gradient(135deg, #D48380 0%, #85352F 100%);
+	box-shadow: 1px 1px 8px #606060;
+	margin-right: 30rem;
+	margin-left: 30rem;
+	margin-bottom: 3rem;
+	margin-top: 3rem;
+	
 	text-align: center;	
 } 
+form fieldset legend {
+	padding: 10px;
+	font-size: 100%;
+	text-shadow: 1px 1px 8px #606060;
+	text-align: center;
+	color: white;
+} 
+
+.titulosform {
+	color: white;
+}
 
 #imagennuestroequipo{
 	text-align: center;
